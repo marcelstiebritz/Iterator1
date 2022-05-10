@@ -24,5 +24,19 @@ public class Main {
             }
         }
         System.out.println(numbers);
+
+        /* In der for Schleife wird ein Iterator Erstellt. Abbruchbedingung ist iter.next(Also mache so lange
+           bis es kein nächstes Element gibt;
+
+         */
+        for(Iterator<Integer> iter = numbers.iterator(); iter.hasNext();){
+            // i wird der nächste werde vom Iterator zugewiesen
+            Integer i = iterator.next();
+            // Wenn i kleiner 10 ist
+            if (i<10){
+                // wird das Element entfernt
+                iterator.remove();
+            }
+        }
     }
 }
